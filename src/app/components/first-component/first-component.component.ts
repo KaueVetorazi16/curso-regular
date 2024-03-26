@@ -9,4 +9,14 @@ import { Component } from '@angular/core';
 })
 export class FirstComponentComponent {
 
+  name: string = 'Kaue';
+  idade: number = 30;
+  job = 'Programador';
+  hobbies = ['Jogar futebol', 'Assistir seriados', 'Jogar Video-Game'];
+  car = {
+    name: "Polo",
+    marca: "VW"
+  }
+
+
 }
