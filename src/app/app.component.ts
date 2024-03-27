@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 import { FirstComponentComponent } from './components/first-component/first-component.component';
 import { ParentDataComponent } from './components/parent-data/parent-data.component';
 import { DirectivesComponent } from './components/directives/directives.component';
@@ -9,6 +9,7 @@ import { EmitterComponent } from './components/emitter/emitter.component';
 import { ListRenderComponent } from './components/list-render/list-render.component';
 import { PipesComponent } from './components/pipes/pipes.component';
 import { TwoWayBindingComponent } from './components/two-way-binding/two-way-binding.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @Component({
@@ -23,7 +24,9 @@ import { TwoWayBindingComponent } from './components/two-way-binding/two-way-bin
     EmitterComponent,
     ListRenderComponent,
     PipesComponent,
-    TwoWayBindingComponent],
+    TwoWayBindingComponent,
+    RouterLink,
+    HttpClientModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
